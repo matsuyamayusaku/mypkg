@@ -10,6 +10,12 @@
 * talker.pyから送られた数値を出力
 ### talk_listen.launch.py
 * talker.pyとlistener.pyのlaunchファイル
+### random.py
+* 1~100のうちランダムな数値をanpan.pyへ送る
+### anpan.py
+* random.pyから送られた数値の回数だけ"あんぱん"と出力
+### random_anpan.launch.py
+* random.pyとanpan.pyのlaunchファイル
 
 ## リポジトリの使用方法
 ```
@@ -37,6 +43,22 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1674294131.712341600] [listener]: Listen: 3
 [listener-2] [INFO] [1674294132.212573200] [listener]: Listen: 4
 ...
+```
+### random anpan
+-実行
+```
+$ ros2 launch mypkg random_anpan.launch.py
+```
+-実行結果
+```
+[INFO] [launch]: All log files can be found below /home/yusaku/.ros/log/2023-01-21-22-33-07-212576-DESKTOP-LOBNNRA-4361
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [random-1]: process started with pid [4362]
+[INFO] [anpan-2]: process started with pid [4364]
+[anpan-2]
+[anpan-2] あんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあ んぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱ んあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱん
+[anpan-2] あんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあ んぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱ んあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあ んぱんあんぱんあんぱんあんぱん
+[anpan-2] あんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあ んぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱんあんぱ んあんぱんあんぱんあんぱん
 ```
 
 # テスト環境
