@@ -5,15 +5,15 @@
 
 ## 概要
 ### talker.py
-* 数値をlistener.pyに送る
+* 0から1づつ加算されていく値をpublishする
 ### listener.py
-* talker.pyから送られた数値を出力
+* talker.pyの値をsubscribeし出力
 ### talk_listen.launch.py
 * talker.pyとlistener.pyのlaunchファイル
 ### random.py
-* 1~100のうちランダムな数値をanpan.pyへ送る
+* 1~100のうちランダムな値をpublishする
 ### anpan.py
-* random.pyから送られた数値の回数だけ"あんぱん"と出力
+* random.pyの値をsubscribeし、値の回数だけ"あんぱん"と出力
 ### random_anpan.launch.py
 * random.pyとanpan.pyのlaunchファイル
 
